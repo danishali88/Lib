@@ -1,0 +1,32 @@
+__int64 __fastcall (*sub_1F3038)(__int64 a1, const char *a2, unsigned __int64 a3);
+__int64 __fastcall hsub_1F3038(__int64 a1, const char *a2, unsigned __int64 a3) {
+    
+    
+    if ( strstr(a2,"/init.cheets.usb.rc") || 
+     
+    
+       strstr(a2,"Records") || 
+       strstr(a2,"flags") || 
+       strstr(a2,"getAlgorithm") || 
+       strstr(a2,"getFlags") || 
+       strstr(a2,"AMotionEvent_getFlags") || 
+       strstr(a2,"AInputEvent_getDeviceId") || 
+       strstr(a2,"com.pubg.imobile") || 
+       strstr(a2,"libEGL.so") ||    
+       strstr(a2,"__system_property_get") || 
+       strstr(a2,"Report") || 
+       strstr(a2,"report") || 
+       strstr(a2,"ReportPlayerKillFlow") || 
+       strstr(a2,"ReportAimFlow") || 
+       strstr(a2,"ReportVoiceTeamCreate") || 
+       strstr(a2,"ReportHurtFlow") || 
+       strstr(a2,"ReportGameStartFlow") || 
+       strstr(a2,"ReportVerifyInfoFlow") || 
+       strstr(a2,"ReportAttackFlow") || 
+       strstr(a2,"ReportGameEndFlow") || 
+       strstr(a2,"MLAISingleDestroyBulletInfo") || 
+       strstr(a2,"egl")){ 
+       return 0;  }
+   return sub_1F3038(a1,a2,a3);
+
+}
